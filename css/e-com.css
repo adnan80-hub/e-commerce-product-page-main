@@ -392,6 +392,13 @@ header .container ul li:hover {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+@media(max-width: 753px) {
+    .text-product span {
+        margin-bottom: 1rem;
+    }
 }
 
 .text-product h1 {
@@ -546,7 +553,7 @@ header .container ul li:hover {
     }
 
     .text-product {
-        padding-top: 0.5rem !important;
+        padding-top: 2rem !important;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -557,7 +564,7 @@ header .container ul li:hover {
     }
 
     .text-product p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.6rem;
     }
 
