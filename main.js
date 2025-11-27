@@ -131,6 +131,11 @@ add_card.onclick = function () {
     counting_cart.textContent = number.textContent;
     counting_cart.style.cssText = "display: grid; place-items: center;"
 
+    if (data === 0) {
+        counting_cart.style.cssText = "display:none;";
+        return;
+    }
+
     deleted.onclick = function () {
         parent.parentElement.remove()
         text_add_product.style.cssText = "display: grid;";
