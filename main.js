@@ -145,8 +145,6 @@ add_card.onclick = function () {
     file_avatar.appendChild(grandPa)
 }
 
-let names = ["ahmed", "sara", "morad", "kitkat"];
 
-console.log(names[Math.trunc(Math.random() * names.length)])
 
 
