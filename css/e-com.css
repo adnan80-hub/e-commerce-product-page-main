@@ -257,6 +257,10 @@ header .container ul li:hover {
         padding-top: unset;
         padding-bottom: unset;
     }
+
+    .page-e-com {
+        gap: unset;
+    }
 }
 
 /* ================= page-img-full ================= */
@@ -344,7 +348,7 @@ header .container ul li:hover {
 
     .full-it {
         width: 100%;
-        height: 339px;
+        height: 294px;
     }
 
     .list-img-full {
