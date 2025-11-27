@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --orange-color: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+
+body {
+    font-family: "Kumbh Sans", sans-serif !important;
+}
+
+header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+
+.menu {
+    width: 20px;
+    margin-right: 1rem;
+    display: none;
+}
+
+.close {
+    width: 17px;
+    display: none;
+}
+
+header .container .logo {
+    width: 15%;
+    margin-right: 3rem;
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container ul li {
+    color: var(--dark-grayish-blue);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header .container ul li:hover {
+    color: var(--orange-color)
+}
+
+
+.profile-cart .cart {
+    width: 25px;
+    cursor: pointer;
+}
+
+.profile-cart .avatar {
+    width: 50px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        margin-bottom: unset;
+    }
+
+    .menu {
+        display: block;
+        width: 18px;
+        cursor: pointer;
+    }
+
+    header .container .logo {
+        width: 40%;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 14px;
+        cursor: pointer;
+    }
+
+    ul {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--very-dark-blue);
+        flex-direction: column;
+        transition: 0.4s;
+        overflow: hidden;
+        z-index: 88;
+    }
+
+    ul li {
+        padding-left: 1rem;
+    }
+
+    .profile-cart .cart {
+        width: 18px;
+    }
+
+    .profile-cart .avatar {
+        width: 30px;
+    }
+
+}
+
+/* =============== FILE CART =========== */
+
+.file-cart {
+    top: 51px;
+    left: -16rem;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0000001a;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+@media (max-width:753px) {
+    .file-cart {
+        top: 60px;
+        width: 415px;
+        left: calc(-15rem + -9px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.file-cart .title-cart {
+    padding: 20px 16px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--light-grayish-blue);
+}
+
+.file-cart .file-add-product {
+    width: 100%;
+    height: 200px;
+}
+
+.file-cart .file-add-product .text-add-product {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    color: var(--dark-grayish-blue);
+}
+
+.counting-cart {
+    top: -10px;
+    right: -8px;
+    width: 27px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+    color: var(--white);
+    display: none;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* =============== section =====================  */
+
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.page-e-com {
+    gap: 5rem;
+}
+
+
+.inside-img {
+    width: 470px;
+    max-width: 100%;
+    height: 470px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.inside-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose-img {
+    max-width: 100%;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-img span {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    border: 2px solid var(--white);
+}
+
+.choose-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose-img span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.choose-img span:hover {
+    border-color: var(--orange-color);
+}
+
+.choose-img span:hover::before {
+    background-color: #ffffffc7;
+}
+
+@media(max-width: 753px) {
+    .inside-img {
+        display: none;
+    }
+
+    .choose-img {
+        display: none;
+    }
+
+    .section {
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+}
+
+/* ================= page-img-full ================= */
+
+.page-img-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000094;
+    display: none;
+    justify-content: center;
+    padding-top: 7rem;
+
+}
+
+.full-it {
+    width: 507px;
+    height: 570px;
+}
+
+.list-img-full {
+    width: 507px;
+    height: 507px;
+    overflow: hidden;
+
+}
+
+.list-img-full img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+.icon-left {
+    top: 35%;
+    left: -4%;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-right {
+    top: 35%;
+    right: -2%;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-full {
+    position: absolute;
+    top: -8%;
+    right: 12px;
+    color: var(--grayish-blue);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.close-full:hover {
+    color: var(--orange-color);
+}
+
+
+@media(max-width: 753px) {
+    .page-img-full {
+        position: unset;
+        display: block;
+        height: 32vh;
+        padding: unset;
+        opacity: 1 !important;
+    }
+
+    .full-it {
+        width: 100%;
+        height: 339px;
+    }
+
+    .list-img-full {
+        width: 100%;
+        height: 100%;
+    }
+
+    .list-img-full img {
+        width: 116%;
+        height: 133%;
+        border-radius: unset;
+    }
+
+    .close-full {
+        position: unset;
+        display: none !important;
+    }
+
+    .icon-left {
+        left: 2%;
+    }
+
+    .icon-right {
+        right: 2%;
+    }
+}
+
+
+/* =================== text - product ====================== ===*/
+
+
+.text-product {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.text-product span {
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.text-product h1 {
+    color: var(--black);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.text-product p {
+    font-size: 21px;
+    color: var(--dark-grayish-blue);
+    line-height: 2.3rem;
+}
+
+.price-t .price {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.price-product {
+    flex-direction: column;
+}
+
+.price-product .price-t .cut {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 3px 9px;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.price-product .pre-price {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.counting {
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 8px;
+}
+
+.counting .num-count {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.counting .minus,
+.counting .plus {
+    font-size: 30px;
+    font-weight: 700;
+    object-fit: cover;
+    color: var(--orange-color);
+    cursor: pointer;
+
+}
+
+.add-card {
+    min-width: 300px;
+    background-color: var(--orange-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-card i {
+    color: var(--black);
+}
+
+.add-card .text-card {
+    font-weight: 700;
+}
+
+
+/* ============ add - file ============= */
+
+.parent-file {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 20px;
+}
+
+.parent-file img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.child-title .title-file {
+    color: var(--grayish-blue);
+    font-size: 15px;
+}
+
+
+.child-title .total {
+    color: var(--grayish-blue);
+    font-size: 15px;
+}
+
+.child-title .total-span {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.parent-file i {
+    font-size: 21px;
+    color: var(--grayish-blue);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.parent-file i:hover {
+    color: var(--black);
+}
+
+.checkout {
+    width: 90%;
+    padding: 13px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--orange-color);
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .page-e-com {
+        flex-direction: column;
+    }
+
+    .count-card {
+        flex-direction: column;
+    }
+
+    .count-card .add-card {
+        padding: 15px;
+    }
+
+    .text-product {
+        padding-top: 0.5rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .text-product h1 {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+    .text-product p {
+        font-size: 15px;
+        line-height: 1.6rem;
+    }
+
+    .price-product {
+        flex-direction: unset;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .price-product .price-t .price {
+        font-size: 27px;
+    }
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+ */
+/* > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */

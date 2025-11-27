@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this page is for E-commerce">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/e-com.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container d-flex align-items-center py-4">
+      <img class="menu" src="images/icon-menu.svg" alt="">
+      <img class="logo" src="images/logo.svg" alt="">
+      <ul class="list-unstyled  m-0 gap-5 me-auto">
+        <img class="close" src="images/icon-close.svg" alt="">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="profile-cart d-flex align-items-center gap-4">
+
+        <div class="group-cart position-relative">
+          <div class="counting-cart position-absolute">0</div>
+          <img class="cart" src="images/icon-cart.svg" alt="">
+          <div class="file-cart position-absolute ">
+            <div class="title-cart">Cart</div>
+            <div class="file-add-product">
+              <div class="text-add-product">Your cart is empty</div>
+            </div>
+          </div>
+
+        </div>
+
+        <img class="avatar" src="images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- =========== Section ================  -->
+
+  <div class="section">
+    <div class="page-e-com d-flex justify-content-center">
+
+      <div class="img">
+        <div class="inside-img mb-3">
+          <img src="images/image-product-1.jpg" alt="">
+        </div>
+        <div class="choose-img  p-0 m-0 list-unstyled">
+          <span data-product="image-product-1.jpg">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+          </span>
+
+          <span data-product="image-product-2.jpg">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+          </span>
+
+          <span data-product="image-product-3.jpg">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+          </span>
+          <span data-product="image-product-4.jpg">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+          </span>
+        </div>
+        <!-- ====== page-img-full ========= -->
+        <div class="page-img-full ">
+          <div class="full-it position-relative">
+            <div class="list-img-full d-flex gap-3">
+              <img src="images/image-product-1.jpg" alt="">
+              <img src="images/image-product-2.jpg" alt="">
+              <img src="images/image-product-3.jpg" alt="">
+              <img src="images/image-product-4.jpg" alt="">
+            </div>
+            <div class="icon-left position-absolute">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="icon-right position-absolute">
+              <i class="fa-solid fa-angle-right "></i>
+            </div>
+            <i class="fa-solid fa-xmark close-full"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ============== Text prodcut ================= -->
+      <div class="text-product ">
+        <span class="mb-4 d-block">SNEAKER COMPANY</span>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p class="mb-4">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-product d-flex mb-3">
+          <div class="price-t d-flex align-items-center mb-2">
+            <div class="price">$125.00</div><span class="cut">50%</span>
+          </div>
+          <div class="pre-price">$250.00</div>
+        </div>
+
+        <div class="count-card d-flex gap-3">
+
+          <div class="counting">
+            <div class="minus">-</div>
+            <div class="num-count">0</div>
+            <div class="plus">+</div>
+          </div>
+
+          <div class="add-card d-flex justify-content-center align-items-center gap-4">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="text-card">Add to cart</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
