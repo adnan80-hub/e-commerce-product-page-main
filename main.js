@@ -1,6 +1,6 @@
 //  ================= Header ======================================
 
-let closed = document.querySelector(".close");
+const closed = document.querySelector(".close");
 let menu = document.querySelector(".menu");
 let ul = document.querySelector("ul")
 
@@ -86,7 +86,7 @@ minus.onclick = function () {
 }
 
 let price = 125;
-let num_sec = 0;
+// let num_sec = 0;
 let num = 0;
 
 add_card.onclick = function () {
