@@ -81,7 +81,7 @@ plus.onclick = function () {
 }
 
 minus.onclick = function () {
-    if (number.textContent == 0) return;
+    if (number.textContent === 0) return;
     number.textContent = --num;
 }
 
