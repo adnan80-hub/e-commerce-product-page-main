@@ -1,8 +1,8 @@
 //  ================= Header ======================================
 
 const closed = document.querySelector(".close");
-let menu = document.querySelector(".menu");
-let ul = document.querySelector("ul")
+const menu = document.querySelector(".menu");
+const ul = document.querySelector("ul")
 
 
 menu.onclick = function () {
