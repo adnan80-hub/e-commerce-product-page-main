@@ -32,7 +32,7 @@ header {
     display: none;
 }
 
-.close {
+.close img {
     width: 17px;
     display: none;
 }
@@ -82,7 +82,7 @@ header .container ul li:hover {
         width: 40%;
     }
 
-    .close {
+    .close img {
         display: block;
         position: absolute;
         right: 16px;
