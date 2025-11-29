@@ -64,6 +64,13 @@ header .container ul li:hover {
 
 .profile-cart .avatar {
     width: 50px;
+    cursor: pointer;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.profile-cart .avatar:hover {
+    border-color: var(--orange-color);
 }
 
 @media (max-width: 700px) {

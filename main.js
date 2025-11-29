@@ -57,16 +57,16 @@ inside_img.onclick = function () {
 // ================== Section ===============================
 
 
-const choose = document.querySelectorAll(".choose-img span");
-const imgOrgin = document.querySelector(".inside-img img");
-const add_card = document.querySelector(".add-card");
-const file_avatar = document.querySelector(".file-add-product");
-const text_add_product = document.querySelector(".text-add-product");
-const counting_cart = document.querySelector(".counting-cart");
-const minus = document.querySelector(".minus");
-const plus = document.querySelector(".plus");
-const number = document.querySelector(".num-count");
-
+let choose = document.querySelectorAll(".choose-img span");
+let imgOrgin = document.querySelector(".inside-img img");
+let add_card = document.querySelector(".add-card");
+let file_avatar = document.querySelector(".file-add-product");
+let text_add_product = document.querySelector(".text-add-product");
+let counting_cart = document.querySelector(".counting-cart");
+let minus = document.querySelector(".minus");
+let plus = document.querySelector(".plus");
+let number = document.querySelector(".num-count");
+let num = 0;
 
 
 choose.forEach((ele) => {
@@ -75,6 +75,7 @@ choose.forEach((ele) => {
         imgOrgin.src = `images/${window.localStorage.getItem("img-product")}`;
     })
 })
+
 
 plus.onclick = function () {
     number.textContent = ++num;
@@ -86,7 +87,6 @@ minus.onclick = function () {
 }
 
 const price = 125;
-const num = 0;
 
 add_card.onclick = function () {
 
@@ -106,7 +106,7 @@ add_card.onclick = function () {
     const span = document.createElement("span");
     const num_count = document.createElement("span");
     const checkout = document.createElement("div");
-    const data = number.textContent;
+    let data = number.textContent;
 
     checkout.className = "checkout";
     checkout.textContent = "Checkout"
