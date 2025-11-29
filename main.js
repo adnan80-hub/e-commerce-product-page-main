@@ -14,8 +14,8 @@ closed.onclick = function () {
 }
 
 
-let cart = document.querySelector(".cart");
-let file_cart = document.querySelector(".file-cart");
+const cart = document.querySelector(".cart");
+const file_cart = document.querySelector(".file-cart");
 
 file_cart.classList.add("hidden")
 
@@ -30,12 +30,12 @@ cart.onclick = function () {
 
 // ================= page-- img --- full =================
 
-let pageImg = document.querySelector(".list-img-full");
-let right = document.querySelector(".icon-right ");
-let left = document.querySelector(".icon-left ");
-let inside_img = document.querySelector(".inside-img");
-let full_page = document.querySelector(".page-img-full");
-let close_back_page = document.querySelector(".close-full");
+const pageImg = document.querySelector(".list-img-full");
+const right = document.querySelector(".icon-right ");
+const left = document.querySelector(".icon-left ");
+const inside_img = document.querySelector(".inside-img");
+const full_page = document.querySelector(".page-img-full");
+const close_back_page = document.querySelector(".close-full");
 
 left.onclick = function () {
     pageImg.prepend(pageImg.querySelector("img:last-child"));
@@ -57,15 +57,15 @@ inside_img.onclick = function () {
 // ================== Section ===============================
 
 
-let choose = document.querySelectorAll(".choose-img span");
-let imgOrgin = document.querySelector(".inside-img img");
-let add_card = document.querySelector(".add-card");
-let file_avatar = document.querySelector(".file-add-product");
-let text_add_product = document.querySelector(".text-add-product");
-let counting_cart = document.querySelector(".counting-cart");
-let minus = document.querySelector(".minus");
-let plus = document.querySelector(".plus");
-let number = document.querySelector(".num-count");
+const choose = document.querySelectorAll(".choose-img span");
+const imgOrgin = document.querySelector(".inside-img img");
+const add_card = document.querySelector(".add-card");
+const file_avatar = document.querySelector(".file-add-product");
+const text_add_product = document.querySelector(".text-add-product");
+const counting_cart = document.querySelector(".counting-cart");
+const minus = document.querySelector(".minus");
+const plus = document.querySelector(".plus");
+const number = document.querySelector(".num-count");
 
 
 
@@ -85,9 +85,8 @@ minus.onclick = function () {
     number.textContent = --num;
 }
 
-let price = 125;
-// let num_sec = 0;
-let num = 0;
+const price = 125;
+const num = 0;
 
 add_card.onclick = function () {
 
@@ -97,17 +96,17 @@ add_card.onclick = function () {
 
     // ================================
 
-    let grandPa = document.createElement("div");
-    let parent = document.createElement("div");
-    let img = document.createElement("img");
-    let child_title = document.createElement("div");
-    let title = document.createElement("div");
-    let total = document.createElement("div");
-    let deleted = document.createElement("i");
-    let span = document.createElement("span");
-    let num_count = document.createElement("span");
-    let checkout = document.createElement("div");
-    let data = number.textContent;
+    const grandPa = document.createElement("div");
+    const parent = document.createElement("div");
+    const img = document.createElement("img");
+    const child_title = document.createElement("div");
+    const title = document.createElement("div");
+    const total = document.createElement("div");
+    const deleted = document.createElement("i");
+    const span = document.createElement("span");
+    const num_count = document.createElement("span");
+    const checkout = document.createElement("div");
+    const data = number.textContent;
 
     checkout.className = "checkout";
     checkout.textContent = "Checkout"
