@@ -282,7 +282,7 @@ header .container ul li:hover {
     display: none;
     justify-content: center;
     padding-top: 7rem;
-
+    z-index: 1000;
 }
 
 .full-it {
