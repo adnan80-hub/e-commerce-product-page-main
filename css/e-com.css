@@ -22,9 +22,12 @@ body {
 
 header {
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--light-grayish-blue);
 }
 
+header .container {
+    border-bottom: 2px solid var(--light-grayish-blue);
+
+}
 
 .menu {
     width: 20px;
@@ -48,8 +51,24 @@ header .container ul {
 
 header .container ul li {
     color: var(--dark-grayish-blue);
-    transition: 0.5s;
+    transition: 0.4s;
     cursor: pointer;
+    position: relative;
+}
+
+header .container ul li::before {
+    content: "";
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--orange-color);
+    transition: 0.4s;
+}
+
+header .container ul li:hover::before {
+    width: 100%;
 }
 
 header .container ul li:hover {
