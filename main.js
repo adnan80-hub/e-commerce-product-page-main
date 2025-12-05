@@ -6,7 +6,7 @@ const ul = document.querySelector("ul")
 
 
 menu.onclick = function () {
-    ul.style.cssText = "width: 70%; padding: 50px 12px;"
+    ul.style.cssText = "width: 70%; padding: 10px 12px;"
 }
 
 closed.onclick = function () {

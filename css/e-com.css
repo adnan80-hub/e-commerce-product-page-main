@@ -133,6 +133,10 @@ header .container ul li:hover {
         padding-left: 1rem;
     }
 
+    header .container ul li::before {
+        position: unset;
+    }
+
     .profile-cart .cart {
         width: 18px;
     }
